@@ -1,4 +1,4 @@
-# ACS71020
+# [ACS71020](https://www.allegromicro.com/en/products/sense/current-sensor-ics/zero-to-fifty-amp-integrated-conductor-sensor-ics/acs71020)
 The Allegro ACS71020 power monitoring IC greatly simplifies
 the addition of power monitoring to many AC powered systems.
 The sensor may be powered from the same supply as the
@@ -7,6 +7,9 @@ and expensive digital isolation ICs. The device’s construction
 includes a copper conduction path that generates a magnetic field
 proportional to applied current. The magnetic field is sensed
 differentially to reject errors introduced by common mode fields.
+
+
+![ACS71020 Block Diagram](https://www.allegromicro.com/-/media/images/products/71020/acs71020-block-diagram.jpg)
 
 ## This Library
 Is a comprehensive collection of register maps and their bitfields. 
