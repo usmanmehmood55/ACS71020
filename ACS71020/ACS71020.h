@@ -1,7 +1,17 @@
 /**
  * @file ACS71020.h
+ * 
  * @author Usman Mehmood (usmanmehmood55@gmail.com)
- * @brief
+ * 
+ * @brief The Allegro ACS71020 power monitoring IC greatly simplifies
+ * the addition of power monitoring to many AC powered systems.
+ * The sensor may be powered from the same supply as the
+ * system's MCU, eliminating the need for multiple power supplies
+ * and expensive digital isolation ICs. The device's construction
+ * includes a copper conduction path that generates a magnetic field
+ * proportional to applied current. The magnetic field is sensed
+ * differentially to reject errors introduced by common mode fields.
+ * 
  * @version 0.1
  * @date 2022-04-16
  *
@@ -54,7 +64,7 @@ typedef union
          * 9-bit number with an input range of –256 to 255. With a step
          * size of 64 LSB, this equates to an offset trim range of –16384
          * to 16320 LSB, which is added to the icodes value. The trim is
-         * implemented as shown in Figure 14. The current channel’s offset
+         * implemented as shown in Figure 14. The current channel's offset
          * trim should be applied before the gain is trimmed.
          * @param Range: –256 to 255
          * @param Value: –16384 to 16320
@@ -68,7 +78,7 @@ typedef union
          * is implemented as a percentage multiplier centered around 1 (i.e.
          * writing a 0 to this field multiplies the gain by 1, leaving the gain
          * unaffected). The fine sensitivity parameter ranges from 50% to
-         * 150% of IP. The current channel’s offset trim should be applied
+         * 150% of IP. The current channel's offset trim should be applied
          * before the gain is trimmed.
          * @param Range: –256 to 255
          * @param Value: 50 to 100
@@ -80,7 +90,7 @@ typedef union
          * @brief Coarse gain adjustment for the current channel. This gain is
          * implemented in the analog domain before the ADC. This is a
          * 3-bit number that allows for 8 gain selections. Adjustments to
-         * “crs_sns” may impact the device’s performance over temperature.
+         * “crs_sns” may impact the device's performance over temperature.
          * Datasheet limits apply only to the factory settings for “crs_sns”.
          * The gain settings map to as shows in parameters:
          * @param 0 1×
@@ -323,7 +333,7 @@ typedef union
         
         /**
          * @brief Settings for the I2C Slave Address. The Voltage on the DIO pins
-         * are measured at power and are used to set the device’s slave
+         * are measured at power and are used to set the device's slave
          * address.
          * Each DIO pin has 4 voltage “bins” which may be used to set
          * the I2C slave address. These voltages may be set using resistor
