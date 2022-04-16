@@ -12,7 +12,9 @@ differentially to reject errors introduced by common mode fields.
 ![ACS71020 Block Diagram](https://www.allegromicro.com/-/media/images/products/71020/acs71020-block-diagram.jpg)
 
 ## This Library
-Is a comprehensive collection of register maps and their bitfields. 
+Is a comprehensive collection of register maps and their bitfields, 
+for [EEPROM registers](/ACS71020/ACS71020_eeprom.h)
+and [volatile registers](/ACS71020/ACS71020_volatile.h). 
 When completed, developer would easily be able to get and set all
 configurations, and read all measurements. The bitfields are indepedent
 of protocol used, so both i2c and SPI will work. However, development
