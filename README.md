@@ -18,7 +18,7 @@ and [volatile registers](/ACS71020/ACS71020_volatile.h).
 When completed, developer would easily be able to get and set all
 configurations, and read all measurements. The bitfields are indepedent
 of protocol used, so both i2c and SPI will work. However, development
-related to i2c will be preferred.
+related to i2c will be prioritized.
 
 ## Note
 This is an incomplete library, and is not intended to be used in
