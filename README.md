@@ -1,5 +1,6 @@
 # [ACS71020](https://www.allegromicro.com/en/products/sense/current-sensor-ics/zero-to-fifty-amp-integrated-conductor-sensor-ics/acs71020)
-The Allegro ACS71020 power monitoring IC greatly simplifies
+The [Allegro ACS71020](https://www.allegromicro.com/en/products/sense/current-sensor-ics/zero-to-fifty-amp-integrated-conductor-sensor-ics/acs71020)
+power monitoring IC greatly simplifies
 the addition of power monitoring to many AC powered systems.
 The sensor may be powered from the same supply as the
 system’s MCU, eliminating the need for multiple power supplies
@@ -21,6 +22,6 @@ of protocol used, so both i2c and SPI will work. However, development
 related to i2c will be prioritized.
 
 ## Note
-This is an incomplete library, and is not intended to be used in
-its current form. Its concept has only been tested in software, never on
-an actual hardware platform.
+Although most of the work has been done, this is an incomplete library
+and is not intended to be used in its current form. Its concept has only 
+been tested in software, never on an actual hardware platform.
