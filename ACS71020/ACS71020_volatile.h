@@ -353,8 +353,8 @@ typedef union
     {
         /**
          * @brief Customer write access enabled.
-         * 0 = Non-Customer mode
-         * 1 = Customer mode
+         * @param 0 Non-Customer mode
+         * @param 1 Customer mode
          */
         uint32_t customer_access : 1;
     } fields;
