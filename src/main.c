@@ -18,4 +18,5 @@ void main()
     printf("\nfltdly: %d", addr_0x0D.fields.fltdly);
     printf("\nhalfcycle_en: %d", addr_0x0D.fields.halfcycle_en);
     printf("\nsquarewave_en: %d", addr_0x0D.fields.squarewave_en);
+    
 }
